@@ -1,4 +1,4 @@
-const Anthropic = require('@anthropic-ai/sdk');
+import Anthropic from '@anthropic-ai/sdk';
 
 // System prompt for DSA-focused assistant
 const SYSTEM_PROMPT = `You are NittanyBot, a retro-futuristic robot mascot created by Abhinav Kumar to help students learn Data Structures and Algorithms (DSA) using the curated resources from the DSA Internet Resource Guide.
@@ -44,7 +44,7 @@ Hard rules:
 - Don't ramble—answers must be crisp and helpful.
 - Always prioritize the roadmap → practice → explanation workflow from the guide.`;
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -113,5 +113,5 @@ module.exports = async (req, res) => {
       error: 'Failed to process your request. Please try again.' 
     });
   }
-};
+}
 
