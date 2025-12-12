@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Resource Assistant - Penn State</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <div class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Penn State Nittany Lion Shield -->
+                    <path d="M50 10 L85 25 L85 75 L50 90 L15 75 L15 25 Z" fill="white" stroke="white" stroke-width="2"/>
+                    <circle cx="50" cy="45" r="22" fill="#001E44"/>
+                    <circle cx="45" cy="42" r="3" fill="white"/>
+                    <circle cx="55" cy="42" r="3" fill="white"/>
+                    <ellipse cx="50" cy="50" rx="8" ry="5" fill="white"/>
+                    <path d="M35 35 Q30 30 28 35" stroke="white" stroke-width="2" fill="none"/>
+                    <path d="M65 35 Q70 30 72 35" stroke="white" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <h1>DSA Resource Assistant – Penn State</h1>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#" class="active">Home</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Chat Section -->
+        <main class="chat-section">
+            <div class="chat-messages" id="messages-container">
+                <!-- Initial bot message with avatar -->
+                <div class="message bot">
+                    <div class="avatar bot-avatar">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="25" y="30" width="50" height="45" rx="5" fill="currentColor"/>
+                            <line x1="50" y1="20" x2="50" y2="30" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="50" cy="18" r="3" fill="currentColor"/>
+                            <circle cx="40" cy="45" r="5" fill="white"/>
+                            <circle cx="60" cy="45" r="5" fill="white"/>
+                            <rect x="35" y="60" width="30" height="8" rx="2" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="message-bubble bot-bubble">
+                        <p>Hi! I'm your internet resource guide mascot, created by Abhinav to help you with DSA topics and learning resources. What would you like to explore today?</p>
+                    </div>
+                </div>
+
+                <!-- Suggestion chips -->
+                <div class="suggestion-chips" id="suggestion-chips">
+                    <button class="chip" data-message="Find me a roadmap for learning data structures">Find a Roadmap</button>
+                    <button class="chip" data-message="I want to practice coding problems">Practice Problems</button>
+                    <button class="chip" data-message="Explain a data structures concept to me">Explain a Concept</button>
+                    <button class="chip" data-message="Show me PSU library resources">PSU Library</button>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <input 
+                    type="text" 
+                    id="user-input" 
+                    placeholder="Ask a question about DSA..."
+                    aria-label="Type your message"
+                >
+                <button id="send-button" aria-label="Send message">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Send
+                </button>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h2>Quick Resource Links</h2>
+                <div class="resource-links">
+                    <a href="https://neetcode.io/roadmap" target="_blank" class="resource-link">
+                        <span class="icon">🗺️</span>
+                        <span>NeetCode Roadmap</span>
+                    </a>
+                    <a href="https://leetcode.com" target="_blank" class="resource-link">
+                        <span class="icon">💻</span>
+                        <span>LeetCode</span>
+                    </a>
+                    <a href="https://www.geeksforgeeks.org" target="_blank" class="resource-link">
+                        <span class="icon">♾️</span>
+                        <span>GeeksforGeeks</span>
+                    </a>
+                    <a href="https://stackoverflow.com" target="_blank" class="resource-link">
+                        <span class="icon">📚</span>
+                        <span>Stack Overflow</span>
+                    </a>
+                    <a href="https://guides.libraries.psu.edu" target="_blank" class="resource-link">
+                        <span class="icon">📖</span>
+                        <span>PSU Library Guide</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Penn State DSA Resource Guide. Built for students.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
