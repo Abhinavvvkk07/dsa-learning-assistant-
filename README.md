@@ -85,6 +85,19 @@ Eng202/
 
 ## 🌐 Deploying to Production
 
+### Deploy on Vercel (Recommended) ⚡
+
+**Quick Deploy:**
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Abhinavvvkk07/dsa-learning-assistant-)
+
+1. Click the button above or go to [vercel.com](https://vercel.com)
+2. Import your GitHub repository
+3. Add environment variable: `ANTHROPIC_API_KEY`
+4. Click Deploy!
+
+See [DEPLOY.md](DEPLOY.md) for detailed instructions.
+
 ### Deploy on Render
 
 1. Create a new Web Service on [Render](https://render.com)
